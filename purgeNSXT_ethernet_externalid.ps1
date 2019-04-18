@@ -31,7 +31,7 @@
 #For more information, please refer to <http://unlicense.org>
 
 Param(
-$vmname
+ [Parameter(Mandatory=$true)]$vmname
 )
 
 $vm = Get-VM $vmname
